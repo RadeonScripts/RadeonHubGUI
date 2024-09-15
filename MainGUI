@@ -763,7 +763,7 @@ do
 				Size = UDim2.new(0, 40 * 1.5, 0, 16 * 1.5),
 				ZIndex = 2,
 				Image = "rbxassetid://5028857472",
-				ImageColor3 = Color3.fromRGB(255,0,0),
+				ImageColor3 = themes.LightContrast,
 				ScaleType = Enum.ScaleType.Slice,
 				SliceCenter = Rect.new(2, 2, 298, 298)
 			}, {
@@ -774,7 +774,7 @@ do
 					Size = UDim2.new(1, -22 * 1.5, 1, -4 * 1.5),
 					ZIndex = 2,
 					Image = "rbxassetid://5028857472",
-					ImageColor3 = Color3.fromRGB(255,0,0),
+					ImageColor3 = themes.TextColor,
 					ScaleType = Enum.ScaleType.Slice,
 					SliceCenter = Rect.new(2, 2, 298, 298)
 				})
@@ -1984,9 +1984,10 @@ do
 		if title then
 			toggle.Title.Text = title
 		end
-    print(frame.ImageColor3)
-    if frame.ImageColor3 == Color3.fromRGB(255,0,0)
-      then print("red") end
+
+      toggle.Button.ImageColor3 = Color3.fromRGB(255,0,0)
+
+
 		utility:Tween(frame, {
 			Size = UDim2.new(1, -22, 1, -9),
 			Position = position[value] + UDim2.new(0, 0, 0, 2.5)
@@ -2177,5 +2178,9 @@ do
 		end
 	end
 end
+
+
+
+
 
 return library
