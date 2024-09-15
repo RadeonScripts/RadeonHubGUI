@@ -760,7 +760,7 @@ do
 				BackgroundTransparency = 1,
 				BorderSizePixel = 0,
 				Position = UDim2.new(0.95, -50, 0.35, -8),
-				Size = UDim2.new(0, 40 * 1.5, 0, 16 * 1.5),
+				Size = UDim2.new(0, 40, 0, 16),
 				ZIndex = 2,
 				Image = "rbxassetid://5028857472",
 				ImageColor3 = themes.LightContrast,
@@ -789,7 +789,6 @@ do
 		
 		toggle.MouseButton1Click:Connect(function()
 			active = not active
-      print(toggle)
 			self:updateToggle(toggle, nil, active)
 			
 			if callback then
@@ -1985,7 +1984,7 @@ do
 		if title then
 			toggle.Title.Text = title
 		end
-		
+		print(frame.ImageColor3)
 		utility:Tween(frame, {
 			Size = UDim2.new(1, -22, 1, -9),
 			Position = position[value] + UDim2.new(0, 0, 0, 2.5)
