@@ -1983,16 +1983,13 @@ do
 		
 		if title then
 			toggle.Title.Text = title
-      toggle.Button.BackgroundColor3 = Color3.fromRGB(255,0,0)
+      toggle.Title.TextColor3 = Color3.fromRGB(255,0,0)
 		end
 		
 		utility:Tween(frame, {
 			Size = UDim2.new(1, -22, 1, -9),
 			Position = position[value] + UDim2.new(0, 0, 0, 2.5)
 		}, 0.2)
-    print(toggle.BackgroundColor3)
-		toggle.BackgroundColor3 = Color3.fromRGB(255,0,0)
-    print(toggle.BackgroundColor3)
 		wait(0.1)
 		utility:Tween(frame, {
 			Size = UDim2.new(1, -22, 1, -4),
