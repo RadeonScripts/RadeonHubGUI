@@ -6,7 +6,6 @@ You are free to use this source code - If you would like the original version pl
 
 
 -- init
-print("log change")
 local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
 
@@ -760,7 +759,7 @@ do
 				Name = "Button",
 				BackgroundTransparency = 1,
 				BorderSizePixel = 0,
-				Position = UDim2.new(0.95, -50, 0.35, -8),
+				Position = UDim2.new(0.95, -50, 0.4, -8),
 				Size = UDim2.new(0, 40 * 1.5, 0, 16 * 1.5),
 				ZIndex = 2,
 				Image = "rbxassetid://5028857472",
@@ -771,11 +770,11 @@ do
 				utility:Create("ImageLabel", {
 					Name = "Frame",
 					BackgroundTransparency = 1,
-					Position = UDim2.new(0, 2, 0.8, -6),
-					Size = UDim2.new(1, -22 * 1.5, 1, -4 * 1.5),
+					Position = UDim2.new(0.2, 0, 0.5, 0),
+					Size = UDim2.new(1 * 3, -22 * 3, 1 * 3, -4 * 3),
 					ZIndex = 2,
 					Image = "rbxassetid://5028857472",
-					ImageColor3 = Color3.fromRGB(255,0,0),
+					ImageColor3 = Color3.fromRGB(0,255,0),
 					ScaleType = Enum.ScaleType.Slice,
 					SliceCenter = Rect.new(2, 2, 298, 298)
 				})
@@ -1986,14 +1985,24 @@ do
 			toggle.Title.Text = title
 		end
 
+    if frame.ImageColor3 == Color3.fromRGB(255,0,0) then
+      print("Is red")
+      frame.ImageColor3 = Color3.fromRGB(0,255,0)
+    elseif frame.ImageColor3 == Color3.fromRGB(0,255,0) then
+      print("Is green")
+      frame.ImageColor3 = Color3.fromRGB(255,0,0)
+  else
+    print("NOpe")
+  end
+
 		utility:Tween(frame, {
 			Size = UDim2.new(1, -22, 1, -9),
-			Position = position[value] + UDim2.new(0, 0, 0, 2.5)
+			Position = position[value] - UDim2.new(0, 0, 0, 3.25)
 		}, 0.2)
 		wait(0.1)
 		utility:Tween(frame, {
-			Size = UDim2.new(1, -22, 1, -4),
-			Position = position[value],
+			Size = UDim2.new(1, -22, 1, -9),
+			Position = position[value] - UDim2.new(0, 0, 0, 3.25),
       
 		}, 0.1)
 	end
