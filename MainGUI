@@ -763,7 +763,7 @@ do
 				Size = UDim2.new(0, 40 * 1.5, 0, 16 * 1.5),
 				ZIndex = 2,
 				Image = "rbxassetid://5028857472",
-				ImageColor3 = themes.LightContrast,
+				ImageColor3 = Color3.fromRGB(255,0,0),
 				ScaleType = Enum.ScaleType.Slice,
 				SliceCenter = Rect.new(2, 2, 298, 298)
 			}, {
