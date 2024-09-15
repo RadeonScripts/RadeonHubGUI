@@ -774,8 +774,12 @@ do
 					Size = UDim2.new(1, -22 * 1.5, 1, -4 * 1.5),
 					ZIndex = 2,
           BackgroundColor3 = Color3.fromRGB(255, 0, 0),
-					ScaleType = Enum.ScaleType.Slice,
-					SliceCenter = Rect.new(2, 2, 298, 298)
+          Font = Enum.Font.Gotham,
+          Text = "Text",
+          TextColor3 = themes.TextColor,
+          TextSize = 14 * 1.5,
+          TextTransparency = 0.10000000149012,
+          TextXAlignment = Enum.TextXAlignment.Center
 				})
 			})
 		})
