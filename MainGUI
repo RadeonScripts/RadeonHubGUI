@@ -1985,7 +1985,7 @@ do
 			toggle.Title.Text = title
 		end
 
-      toggle.Button.ImageColor3 = Color3.fromRGB(255,0,0)
+      toggle.Button.Frame.ImageColor3 = Color3.fromRGB(255,0,0)
 
 
 		utility:Tween(frame, {
