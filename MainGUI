@@ -774,7 +774,7 @@ do
 					Size = UDim2.new(1, -22 * 1.5, 1, -4 * 1.5),
 					ZIndex = 2,
 					Image = "rbxassetid://5028857472",
-					ImageColor3 = themes.TextColor,
+					ImageColor3 = Color3.fromRGB(1,0,0),
 					ScaleType = Enum.ScaleType.Slice,
 					SliceCenter = Rect.new(2, 2, 298, 298)
 				})
@@ -1984,8 +1984,6 @@ do
 		if title then
 			toggle.Title.Text = title
 		end
-		print(frame.ImageColor3)
-    frame.ImageColor3 = Color3.new(1, 0, 0)
     print(frame.ImageColor3)
 		utility:Tween(frame, {
 			Size = UDim2.new(1, -22, 1, -9),
