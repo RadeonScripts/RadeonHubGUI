@@ -6,6 +6,7 @@ You are free to use this source code - If you would like the original version pl
 
 
 -- init
+print("log change")
 local player = game.Players.LocalPlayer
 local mouse = player:GetMouse()
 
