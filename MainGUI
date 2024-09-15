@@ -1983,6 +1983,7 @@ do
 		
 		if title then
 			toggle.Title.Text = title
+      toggle.Button.BackgroundColor3 = Color3.fromRGB(255,0,0)
 		end
 		
 		utility:Tween(frame, {
