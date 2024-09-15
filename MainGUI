@@ -789,6 +789,7 @@ do
 		
 		toggle.MouseButton1Click:Connect(function()
 			active = not active
+      print(toggle.Parent)
 			self:updateToggle(toggle, nil, active)
 			
 			if callback then
@@ -1983,7 +1984,6 @@ do
 		
 		if title then
 			toggle.Title.Text = title
-      toggle.Title.TextColor3 = Color3.fromRGB(255,0,0)
 		end
 		
 		utility:Tween(frame, {
