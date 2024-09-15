@@ -789,7 +789,7 @@ do
 		
 		toggle.MouseButton1Click:Connect(function()
 			active = not active
-      print(toggle.Parent)
+      print(toggle)
 			self:updateToggle(toggle, nil, active)
 			
 			if callback then
