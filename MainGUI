@@ -769,7 +769,7 @@ do
 			}, {
 				utility:Create("ImageLabel", {
 					Name = "Frame",
-					BackgroundTransparency = 1,
+					BackgroundTransparency = 0,
 					Position = UDim2.new(0, 2, 0.8, -6),
 					Size = UDim2.new(1, -22 * 1.5, 1, -4 * 1.5),
 					ZIndex = 2,
@@ -1985,7 +1985,7 @@ do
 			toggle.Title.Text = title
 		end
 
-      toggle.Button.Frame.ImageColor3 = Color3.fromRGB(255,0,0)
+      frame.ImageColor3 = Color3.fromRGB(255,0,0)
 
 
 		utility:Tween(frame, {
