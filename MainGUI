@@ -767,14 +767,13 @@ do
 				ScaleType = Enum.ScaleType.Slice,
 				SliceCenter = Rect.new(2, 2, 298, 298)
 			}, {
-				utility:Create("ImageLabel", {
+				utility:Create("TextLabel", {
 					Name = "Frame",
 					BackgroundTransparency = 0,
 					Position = UDim2.new(0, 2, 0.8, -6),
 					Size = UDim2.new(1, -22 * 1.5, 1, -4 * 1.5),
 					ZIndex = 2,
-					Image = "rbxassetid://5028857472",
-					ImageColor3 = themes.TextColor,
+          BackgroundColor3 = Color3.fromRGB(255, 0, 0),
 					ScaleType = Enum.ScaleType.Slice,
 					SliceCenter = Rect.new(2, 2, 298, 298)
 				})
